@@ -665,7 +665,7 @@ async function viewBill(saleId) {
     const json = await res.json();
     if (!json.success) { alert(json.message); return; }
     const { customer, items } = json;
-    let html = `<img class="logo-print" src="https://unsplash.com/photos/a-gold-letter-j-on-a-green-background-UTWyeOWBqns" alt="Logo">`;
+    let html = `<img class="logo-print" src="https://plus.unsplash.com/premium_photo-1669075651445-9ac958f84ac2?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Logo">`;
     html += `<p><strong>Customer:</strong> ${escapeHtml(customer.name || '')}<br>
                 <strong>Address:</strong> ${escapeHtml(customer.address || '')}<br>
                 <strong>Telephone Number:</strong> ${escapeHtml(customer.phone || '')}</p>
